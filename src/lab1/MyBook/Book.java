@@ -1,9 +1,7 @@
+package lab1.MyBook;
+
 import java.util.ArrayList;
 import java.util.List;
-
-/**
- * 
- */
 
 /**
  * @author Diana Anton

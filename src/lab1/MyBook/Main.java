@@ -1,3 +1,5 @@
+package lab1.MyBook;
+
 
 public class Main {
 
@@ -13,6 +15,6 @@ public class Main {
 		discoTitanic.createNewTable( "Table 1" );
 		discoTitanic.createNewParagraph( "Paragraph 5" );
 		discoTitanic.print();
-	}
+ 	}
 
 }
