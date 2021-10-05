@@ -1,4 +1,7 @@
 /bin/
+.idea
+.classpath
+.project
 # Compiled class file
 *.class
 
