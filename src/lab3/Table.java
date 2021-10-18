@@ -36,4 +36,15 @@ public class Table implements Element{
 		// TODO Auto-generated method stub
 		// nu e nevoie sa le implementam ca astea sunt frunze
 	}
+
+	@Override
+	public boolean find(Element e) {
+		// TODO Auto-generated method stub
+		if (!(e instanceof Table)) {
+			return false;
+		}
+		else {
+			return ((Table) e).title.equals(this.title);
+		}
+	}
 }

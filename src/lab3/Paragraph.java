@@ -32,4 +32,14 @@ public class Paragraph implements Element {
 		// TODO Auto-generated method stub
 		// nu e nevoie sa le implementam ca astea sunt frunze
 	}
+	@Override
+	public boolean find(Element e) {
+		// TODO Auto-generated method stub
+		if (!(e instanceof Paragraph)) {
+			return false;
+		}
+		else {
+			return ((Paragraph) e).text.equals(this.text);
+		}
+	}
 }

@@ -21,13 +21,19 @@ public class Main {
 		Section cap1111 = new Section( "Subchapter 1.1.1.1" ) ;
 		noapteBuna.addContent( new Paragraph( "Multumesc celor care ..." )) ;
 		noapteBuna.addContent(cap1) ;
-		cap1.add( new Paragraph( "Moto capitol" )) ;
-		cap1.add(cap11) ;
-		cap11.add( new Paragraph( "Text from subchapter 1.1" )) ;
-		cap11.add(cap111) ;
-		cap111.add( new Paragraph( "Text from subchapter 1.1.1" )) ;
-		cap111.add(cap1111) ;
-		cap1111.add( new Image( "Image subchapter 1.1.1.1" )) ;
+		try {
+			cap1.add( new Paragraph( "Moto capitol" )) ;
+			cap1.add(cap11) ;
+			cap11.add( new Paragraph( "Text from subchapter 1.1" )) ;
+			cap11.add(cap111) ;
+			cap111.add( new Paragraph( "Text from subchapter 1.1.1" )) ;
+			cap111.add(cap1111) ;
+			cap1111.add( new Image( "Image subchapter 1.1.1.1" )) ;
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 		noapteBuna.print() ;
 	}
 }
