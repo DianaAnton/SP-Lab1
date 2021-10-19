@@ -3,15 +3,24 @@
  */
 package lab4;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * @author Diana Anton
  *
  */
-public class Image implements Element {
+public class Image implements Element, Picture {
     private String imageName;
+    private Dimension dim;
 
     public Image(String imageName) {
         this.imageName = imageName;
+        try {
+        	TimeUnit.SECONDS.sleep( 5 );
+        } catch (InterruptedException e) {
+        	e.printStackTrace();
+        }
+        this.dim = new Dimension(1, 2);
     }
     
     public void print(){
@@ -46,5 +55,17 @@ public class Image implements Element {
 		else {
 			return ((Image) e).imageName.equals(this.imageName);
 		}
+	}
+
+	@Override
+	public String url() {
+		// TODO Auto-generated method stub
+		return imageName;
+	}
+
+	@Override
+	public Dimension dim() {
+		// TODO Auto-generated method stub
+		return this.dim;
 	}
 }
