@@ -30,5 +30,12 @@ public class Main {
 		cap1.add( new Table( "Table 1" ));
 		RenderContentVisitor rdv = new RenderContentVisitor();
 		cap1.accept(rdv);
+		
+		System.out.println();
+		System.out.println();
+		
+		BookStatistics stats = new BookStatistics();
+		cap1.accept(stats);
+		stats.printStatistics();
 	}
 }
