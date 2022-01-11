@@ -1,10 +1,10 @@
 /**
  * 
  */
-package lab6.models;
-
+package lab10.models;
+import lab10.services.*;
 import java.util.concurrent.TimeUnit; 
-import lab6.services.*;
+
 /**
  * @author Diana Anton
  *

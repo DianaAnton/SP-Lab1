@@ -1,4 +1,4 @@
-package lab6.models;
+package lab10.models;
 
 /**
  * @author Diana Anton
